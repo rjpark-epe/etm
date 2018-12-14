@@ -64,6 +64,7 @@ dependencies {
 	compile group: 'org.hibernate', name: 'hibernate-core', version: '5.3.7.Final'
 	compile group: 'com.oracle', name: 'ojdbc6', version: '12.1.0.1-atlassian-hosted'  
 
+	compile('org.springframework.boot:spring-boot-starter-test')
 	compile 'junit:junit:4.12'
 
 	// https://mvnrepository.com/artifact/com.oracle/ojdbc
