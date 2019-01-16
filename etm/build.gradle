@@ -22,8 +22,9 @@ sourceCompatibility = 1.8
 repositories {
 	mavenCentral()
 	maven { 
-		url "https://repo.spring.io/milestone" 
-		url "https://maven.atlassian.com/3rdparty/"
+		url "http://nexus.11h11m.com:19100/content/groups/public/" 
+		//url "https://repo.spring.io/milestone" 
+		//url "https://maven.atlassian.com/3rdparty/"
 	}
 }
 
@@ -62,12 +63,16 @@ dependencies {
 	testImplementation('org.springframework.security:spring-security-test')
 	compile group: 'com.google.guava', name: 'guava', version: '27.0-jre'
 	compile group: 'org.hibernate', name: 'hibernate-core', version: '5.3.7.Final'
-	compile group: 'com.oracle', name: 'ojdbc6', version: '12.1.0.1-atlassian-hosted'  
+	compile group: 'com.oracle', name: 'ojdbc6', version: '12.1.0.1-atlassian-hosted'
 
 	compile('org.springframework.boot:spring-boot-starter-test')
 	compile 'junit:junit:4.12'
-
+	compile 'org.apache.tiles:tiles-core:3.0.8'
+	compile 'org.apache.tiles:tiles-request-servlet:1.0.7'
+	compile 'javax.servlet:jstl:1.2'
 	// https://mvnrepository.com/artifact/com.oracle/ojdbc
+	
+	compile('org.apache.tomcat.embed:tomcat-embed-jasper')
 
 }
 
